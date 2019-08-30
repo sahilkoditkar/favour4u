@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>favour4u</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/modern-business.css" rel="stylesheet">
+  <link href="css/form.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="spbuttons.php">favour4u</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="contactsp.php">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profilesp.php">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="logout.php">Logout</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">Add Service
+    </h1>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="spbuttons.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">Add Service</li>
+    </ol>
+
+    <!-- Signup Form -->
+    <div class="row">
+      <div class="col-lg-8 mb-4">
+        <form action="addservice.php" method="POST">
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Name:</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="eg.AC_repair" required
+                data-validation-required-message="Please enter your name.">
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Category:</label><br>
+              <select type="text" name="category" id="category" required>
+                <option value="Home_Maintenance">Home_Maintenance</option>
+                <option value="Electronics_Appliances">Electronics_Appliances</option>
+                <option value="Cleaning_Services">Cleaning_Services</option>
+                <option value="Automobile_Services">Automobile_Services</option>
+                <option value="Events_Occasions">Events_Occasions</option>
+                <option value="Health_Services">Health_Services</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Price:</label>
+              <input type="number" class="form-control" id="tel" name="price" placeholder="eg.120" required
+                data-validation-required-message="Please enter your service price.">
+            </div>
+          </div>
+          <div class="control-group form-group">
+            <div class="controls">
+              <label>Decsription:</label>
+              <input type="text" class="form-control" id="description" name="description"
+                placeholder="Write description" required data-validation-required-message="Please enter description.">
+            </div>
+          </div>
+          <div id="success"></div>
+          <!-- For success/fail messages -->
+          <button type="submit" class="btn btn-primary" id="loginButton">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; favour4u 2018. Developed by (Aditya, Aakash, Sahil, Gaurav)
+      </p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
